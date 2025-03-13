@@ -1,5 +1,6 @@
 server:
   port: 8081
+
 spring:
   application:
     name: user-service
@@ -11,7 +12,10 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka:8761/eureka/
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect  # ADD THIS
+  eureka:
+    client:
+      service-url:
+        defaultZone: http://eureka:8761/eureka/
