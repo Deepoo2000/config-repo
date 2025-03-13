@@ -6,8 +6,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: ${vault.secret.auth-service.MAIL_USERNAME}
-    password: ${vault.secret.auth-service.MAIL_PASSWORD}
+    username: deeb37224@gmail.com
+    password: ftnredmhqebdkvzi
     properties:
       mail:
         smtp:
